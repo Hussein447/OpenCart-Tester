@@ -21,7 +21,7 @@ public class LoginTest {
 
     @AfterClass
     public void tearDown() {
-        //driver.quit();
+        driver.quit();
     }
 
     @Test(dependsOnMethods = "com.opencart.tests.RegisterTest.testRegister") // التسجيل أولا

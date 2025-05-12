@@ -1,67 +1,208 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-03T15:15:38 EET" name="Surefire suite" finished-at="2025-04-03T15:16:11 EET" duration-ms="33662">
+  <suite started-at="2025-05-12T14:16:46 EEST" name="Surefire suite" finished-at="2025-05-12T14:18:04 EEST" duration-ms="77623">
     <groups>
     </groups>
-    <test started-at="2025-04-03T15:15:38 EET" name="Surefire test" finished-at="2025-04-03T15:16:11 EET" duration-ms="33662">
-      <class name="com.opencart.tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.opencart.tests.LoginTest@4b0b0854]" started-at="2025-04-03T15:15:57 EET" name="setUp" finished-at="2025-04-03T15:15:58 EET" duration-ms="922" status="PASS">
+    <test started-at="2025-05-12T14:16:46 EEST" name="Surefire test" finished-at="2025-05-12T14:18:04 EEST" duration-ms="77623">
+      <class name="com.opencart.tests.LogoutTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.opencart.tests.LogoutTest@30ee2816]" started-at="2025-05-12T14:17:19 EEST" name="setUp" finished-at="2025-05-12T14:17:23 EEST" duration-ms="3904" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLogin()[pri:0, instance:com.opencart.tests.LoginTest@4b0b0854]" started-at="2025-04-03T15:15:58 EET" name="testLogin" finished-at="2025-04-03T15:16:04 EET" depends-on-methods="com.opencart.tests.RegisterTest.testRegister" duration-ms="6177" status="PASS">
+        <test-method signature="testLogout()[pri:0, instance:com.opencart.tests.LogoutTest@30ee2816]" started-at="2025-05-12T14:17:23 EEST" name="testLogout" finished-at="2025-05-12T14:17:25 EEST" duration-ms="2181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.tests.LogoutTest@30ee2816]" started-at="2025-05-12T14:17:25 EEST" name="tearDown" finished-at="2025-05-12T14:17:26 EEST" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.tests.LogoutTest -->
+      <class name="com.opencart.tests.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.opencart.tests.LoginTest@c267ef4]" started-at="2025-05-12T14:17:34 EEST" name="setUp" finished-at="2025-05-12T14:17:35 EEST" duration-ms="822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogin()[pri:0, instance:com.opencart.tests.LoginTest@c267ef4]" started-at="2025-05-12T14:17:35 EEST" name="testLogin" finished-at="2025-05-12T14:17:40 EEST" depends-on-methods="com.opencart.tests.RegisterTest.testRegister" duration-ms="5230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.tests.LoginTest@4b0b0854]" started-at="2025-04-03T15:16:04 EET" name="tearDown" finished-at="2025-04-03T15:16:04 EET" duration-ms="516" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.tests.LoginTest@c267ef4]" started-at="2025-05-12T14:17:40 EEST" name="tearDown" finished-at="2025-05-12T14:17:41 EEST" duration-ms="513" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.opencart.tests.LoginTest -->
-      <class name="RegisterTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:RegisterTest@13e39c73]" started-at="2025-04-03T15:15:48 EET" name="setUp" finished-at="2025-04-03T15:15:52 EET" duration-ms="3726" status="PASS">
+      <class name="com.opencart.tests.ChangePasswordTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.opencart.tests.ChangePasswordTest@1700915]" started-at="2025-05-12T14:16:59 EEST" name="setUp" finished-at="2025-05-12T14:17:00 EEST" duration-ms="778" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testRegister()[pri:0, instance:RegisterTest@13e39c73]" started-at="2025-04-03T15:15:52 EET" name="testRegister" finished-at="2025-04-03T15:15:56 EET" duration-ms="4365" status="PASS">
+        <test-method signature="testChangePassword()[pri:0, instance:com.opencart.tests.ChangePasswordTest@1700915]" started-at="2025-05-12T14:17:00 EEST" name="testChangePassword" finished-at="2025-05-12T14:17:14 EEST" duration-ms="13983" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Change your password"}
+  (Session info: chrome=136.0.7103.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [65b3ddaa1f46b50ab88c1cdcfff76172, findElement {using=link text, value=Change your password}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: C:\Users\husse\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:2885}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:2885/devtool..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 65b3ddaa1f46b50ab88c1cdcfff76172]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Change your password"}
+  (Session info: chrome=136.0.7103.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [65b3ddaa1f46b50ab88c1cdcfff76172, findElement {using=link text, value=Change your password}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: C:\Users\husse\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:2885}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:2885/devtool..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 65b3ddaa1f46b50ab88c1cdcfff76172
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at com.opencart.tests.ChangePasswordTest.testChangePassword(ChangePasswordTest.java:37)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testRegister -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:RegisterTest@13e39c73]" started-at="2025-04-03T15:15:56 EET" name="tearDown" finished-at="2025-04-03T15:15:57 EET" duration-ms="480" status="PASS">
+        </test-method> <!-- testChangePassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.tests.ChangePasswordTest@1700915]" started-at="2025-05-12T14:17:14 EEST" name="tearDown" finished-at="2025-05-12T14:17:14 EEST" duration-ms="199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- RegisterTest -->
-      <class name="LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:LoginTest@a9cd3b1]" started-at="2025-04-03T15:16:04 EET" name="setUp" finished-at="2025-04-03T15:16:05 EET" duration-ms="684" status="PASS">
+      </class> <!-- com.opencart.tests.ChangePasswordTest -->
+      <class name="com.opencart.tests.AddToCartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.opencart.tests.AddToCartTest@6580cfdd]" started-at="2025-05-12T14:16:46 EEST" name="setUp" finished-at="2025-05-12T14:16:51 EEST" duration-ms="4629" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLogin()[pri:0, instance:LoginTest@a9cd3b1]" started-at="2025-04-03T15:16:05 EET" name="testLogin" finished-at="2025-04-03T15:16:11 EET" depends-on-methods="com.opencart.tests.RegisterTest.testRegister" duration-ms="6068" status="PASS">
+        <test-method signature="testAddProductToCart()[pri:0, instance:com.opencart.tests.AddToCartTest@6580cfdd]" started-at="2025-05-12T14:16:55 EEST" name="testAddProductToCart" finished-at="2025-05-12T14:16:59 EEST" duration-ms="4192" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:LoginTest@a9cd3b1]" started-at="2025-04-03T15:16:11 EET" name="tearDown" finished-at="2025-04-03T15:16:11 EET" duration-ms="437" status="PASS">
+        </test-method> <!-- testAddProductToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.tests.AddToCartTest@6580cfdd]" started-at="2025-05-12T14:18:04 EEST" name="tearDown" finished-at="2025-05-12T14:18:04 EEST" duration-ms="174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- LoginTest -->
+      </class> <!-- com.opencart.tests.AddToCartTest -->
+      <class name="com.opencart.tests.ContactUsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.opencart.tests.ContactUsTest@21de60b4]" started-at="2025-05-12T14:17:14 EEST" name="setUp" finished-at="2025-05-12T14:17:18 EEST" duration-ms="3476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testContactUsForm()[pri:0, instance:com.opencart.tests.ContactUsTest@21de60b4]" started-at="2025-05-12T14:17:18 EEST" name="testContactUsForm" finished-at="2025-05-12T14:17:19 EEST" duration-ms="1523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactUsForm -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.tests.ContactUsTest@21de60b4]" started-at="2025-05-12T14:17:19 EEST" name="tearDown" finished-at="2025-05-12T14:17:19 EEST" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.tests.ContactUsTest -->
+      <class name="com.opencart.tests.RemoveFromCartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.opencart.tests.RemoveFromCartTest@635eaaf1]" started-at="2025-05-12T14:17:41 EEST" name="setUp" finished-at="2025-05-12T14:17:44 EEST" duration-ms="3430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRemoveProductFromCart()[pri:0, instance:com.opencart.tests.RemoveFromCartTest@635eaaf1]" started-at="2025-05-12T14:17:44 EEST" name="testRemoveProductFromCart" finished-at="2025-05-12T14:17:51 EEST" duration-ms="6146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveProductFromCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.tests.RemoveFromCartTest@635eaaf1]" started-at="2025-05-12T14:17:51 EEST" name="tearDown" finished-at="2025-05-12T14:17:51 EEST" duration-ms="160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.tests.RemoveFromCartTest -->
+      <class name="com.opencart.tests.UserJourneyTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.opencart.tests.UserJourneyTest@1ddf84b8]" started-at="2025-05-12T14:17:52 EEST" name="setUp" finished-at="2025-05-12T14:17:53 EEST" duration-ms="703" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="userFullJourneyTest()[pri:0, instance:com.opencart.tests.UserJourneyTest@1ddf84b8]" started-at="2025-05-12T14:17:53 EEST" name="userFullJourneyTest" finished-at="2025-05-12T14:18:04 EEST" duration-ms="11011" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userFullJourneyTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.tests.UserJourneyTest@1ddf84b8]" started-at="2025-05-12T14:18:04 EEST" name="tearDown" finished-at="2025-05-12T14:18:04 EEST" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.tests.UserJourneyTest -->
       <class name="com.opencart.tests.RegisterTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.opencart.tests.RegisterTest@57c758ac]" started-at="2025-04-03T15:15:38 EET" name="setUp" finished-at="2025-04-03T15:15:43 EET" duration-ms="5359" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.opencart.tests.RegisterTest@31d7b7bf]" started-at="2025-05-12T14:17:26 EEST" name="setUp" finished-at="2025-05-12T14:17:30 EEST" duration-ms="3924" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testRegister()[pri:0, instance:com.opencart.tests.RegisterTest@57c758ac]" started-at="2025-04-03T15:15:43 EET" name="testRegister" finished-at="2025-04-03T15:15:48 EET" duration-ms="4412" status="PASS">
+        <test-method signature="testRegister()[pri:0, instance:com.opencart.tests.RegisterTest@31d7b7bf]" started-at="2025-05-12T14:17:30 EEST" name="testRegister" finished-at="2025-05-12T14:17:34 EEST" duration-ms="4413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegister -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.tests.RegisterTest@57c758ac]" started-at="2025-04-03T15:15:48 EET" name="tearDown" finished-at="2025-04-03T15:15:48 EET" duration-ms="464" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.tests.RegisterTest@31d7b7bf]" started-at="2025-05-12T14:17:34 EEST" name="tearDown" finished-at="2025-05-12T14:17:34 EEST" duration-ms="424" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.opencart.tests.RegisterTest -->
+      <class name="com.opencart.tests.SearchTest">
+        <test-method is-config="true" signature="seUp()[pri:0, instance:com.opencart.tests.SearchTest@5c30a9b0]" started-at="2025-05-12T14:16:51 EEST" name="seUp" finished-at="2025-05-12T14:16:55 EEST" duration-ms="3985" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seUp -->
+        <test-method signature="testSearchProduct()[pri:0, instance:com.opencart.tests.SearchTest@5c30a9b0]" started-at="2025-05-12T14:17:51 EEST" name="testSearchProduct" finished-at="2025-05-12T14:17:52 EEST" duration-ms="1160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.tests.SearchTest@5c30a9b0]" started-at="2025-05-12T14:17:52 EEST" name="tearDown" finished-at="2025-05-12T14:17:52 EEST" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.tests.SearchTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

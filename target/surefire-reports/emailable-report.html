@@ -9,13 +9,40 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">33,662</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">77,623</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">LoginTest</td><td><a href="#m0">testLogin</a></td><td rowspan="1">1743686165415</td><td rowspan="1">6068</td></tr><tr class="passedodd"><td rowspan="1">RegisterTest</td><td><a href="#m1">testRegister</a></td><td rowspan="1">1743686152263</td><td rowspan="1">4365</td></tr><tr class="passedeven"><td rowspan="1">com.opencart.tests.LoginTest</td><td><a href="#m2">testLogin</a></td><td rowspan="1">1743686158036</td><td rowspan="1">6177</td></tr><tr class="passedodd"><td rowspan="1">com.opencart.tests.RegisterTest</td><td><a href="#m3">testRegister</a></td><td rowspan="1">1743686143657</td><td rowspan="1">4412</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.opencart.tests.ChangePasswordTest</td><td><a href="#m0">testChangePassword</a></td><td rowspan="1">1747048620576</td><td rowspan="1">13983</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.opencart.tests.AddToCartTest</td><td><a href="#m1">testAddProductToCart</a></td><td rowspan="1">1747048615590</td><td rowspan="1">4192</td></tr><tr class="passedodd"><td rowspan="1">com.opencart.tests.ContactUsTest</td><td><a href="#m2">testContactUsForm</a></td><td rowspan="1">1747048638235</td><td rowspan="1">1523</td></tr><tr class="passedeven"><td rowspan="1">com.opencart.tests.LoginTest</td><td><a href="#m3">testLogin</a></td><td rowspan="1">1747048655688</td><td rowspan="1">5230</td></tr><tr class="passedodd"><td rowspan="1">com.opencart.tests.LogoutTest</td><td><a href="#m4">testLogout</a></td><td rowspan="1">1747048643796</td><td rowspan="1">2181</td></tr><tr class="passedeven"><td rowspan="1">com.opencart.tests.RegisterTest</td><td><a href="#m5">testRegister</a></td><td rowspan="1">1747048650029</td><td rowspan="1">4413</td></tr><tr class="passedodd"><td rowspan="1">com.opencart.tests.RemoveFromCartTest</td><td><a href="#m6">testRemoveProductFromCart</a></td><td rowspan="1">1747048664862</td><td rowspan="1">6146</td></tr><tr class="passedeven"><td rowspan="1">com.opencart.tests.SearchTest</td><td><a href="#m7">testSearchProduct</a></td><td rowspan="1">1747048671168</td><td rowspan="1">1160</td></tr><tr class="passedodd"><td rowspan="1">com.opencart.tests.UserJourneyTest</td><td><a href="#m8">userFullJourneyTest</a></td><td rowspan="1">1747048673203</td><td rowspan="1">11011</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">LoginTest#testLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">RegisterTest#testRegister</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.opencart.tests.LoginTest#testLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.opencart.tests.RegisterTest#testRegister</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Surefire test</h2><h3 id="m0">com.opencart.tests.ChangePasswordTest#testChangePassword</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Change your password&quot;}
+  (Session info: chrome=136.0.7103.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [65b3ddaa1f46b50ab88c1cdcfff76172, findElement {using=link text, value=Change your password}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: C:\Users\husse\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:2885}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:2885/devtool..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 65b3ddaa1f46b50ab88c1cdcfff76172
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.opencart.tests.ChangePasswordTest.testChangePassword(ChangePasswordTest.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.opencart.tests.AddToCartTest#testAddProductToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.opencart.tests.ContactUsTest#testContactUsForm</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.opencart.tests.LoginTest#testLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.opencart.tests.LogoutTest#testLogout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.opencart.tests.RegisterTest#testRegister</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.opencart.tests.RemoveFromCartTest#testRemoveProductFromCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.opencart.tests.SearchTest#testSearchProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.opencart.tests.UserJourneyTest#userFullJourneyTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
